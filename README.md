@@ -32,3 +32,5 @@ hands on codes
 
       </Host>
 ```
+
+<Context docBase="C:\codes\Utils\apache-tomcat-9.0.40\images"  path="/images" />
