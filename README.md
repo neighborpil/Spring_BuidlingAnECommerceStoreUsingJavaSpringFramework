@@ -8,14 +8,15 @@ hands on codes
 -------------------------
 ### 파일 저장시 webapps폴더 밖에 파일을 두는 법
  - server.xml에서 host 영역 안에 파일 저장할 리얼 경로와 접근할 웹 경로를 매핑시켜 준다.
- - <Context docBase="C:\codes\Utils\apache-tomcat-9.0.40\images"  path="/images" />
+
+<Context docBase="C:\codes\Utils\apache-tomcat-9.0.40\images"  path="/images" />
 
 ```
 
-  <Host name="localhost"  appBase="webapps"
+      <Host name="localhost"  appBase="webapps"
             unpackWARs="true" autoDeploy="true">
 
-		**<Context docBase="C:\codes\Utils\apache-tomcat-9.0.40\images"  path="/images" />**
+	<Context docBase="C:\codes\Utils\apache-tomcat-9.0.40\images"  path="/images" />
         <!-- SingleSignOn valve, share authentication between web applications
              Documentation at: /docs/config/valve.html -->
         <!--
