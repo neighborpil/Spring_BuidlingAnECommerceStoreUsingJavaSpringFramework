@@ -11,6 +11,8 @@ hands on codes
 ```
 <Context docBase="C:\codes\Utils\apache-tomcat-9.0.40\images"  path="/images" />
 ```
+ - 이미지 태그의 src에 경로를 <c:url value='/images/파일명.png' />로 해준다
+
 ```
 
       <Host name="localhost"  appBase="webapps"
