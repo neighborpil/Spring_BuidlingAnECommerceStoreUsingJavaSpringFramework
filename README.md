@@ -77,3 +77,14 @@ hands on codes
         return "redirect:/admin/productInventory";
     }
 ```
+--------------------------------------
+### 개발할 때에 output 폴더를 바꿔준다
+ - 이미지를 저장할 때에 out폴더가 아닌 개발소스내 webapps폴더 내에 다이렉트로 넣어주기 위함이다
+
+```
+C:\codes\GitRepository\Spring_BuidlingAnECommerceStoreUsingJavaSpringFramework\Section02\MusicStore\out\artifacts\MusicStore_war_exploded
+```
+↓
+```
+C:\codes\GitRepository\Spring_BuidlingAnECommerceStoreUsingJavaSpringFramework\Section02\MusicStore\src\main\webapp
+```
