@@ -34,3 +34,46 @@ hands on codes
 
       </Host>
 ```
+
+ - 절대 경로에 파일 저장하기
+
+```
+@PostMapping("/admin/productInventory/addProduct")
+    public String addProductPost(@ModelAttribute("product") Product product, HttpServletRequest request) {
+        productDao.addProduct(product);
+
+        MultipartFile productImage = product.getProductImage();
+
+        // 리얼서버에서 webapps 폴더 외에 저장하는 법(catarina.home/images/)
+        String rootPath = System.getProperty("catalina.home");
+        File dir = new File(rootPath + File.separator + "images");
+        if (!dir.exists())
+            dir.mkdirs();
+
+        // Create the file on server
+        String path = dir.getAbsolutePath() + File.separator + product.getProductId() + ".png";
+
+        // 실제 파일 저장할 때에 파일 확장자 설정법
+//      java.util.Date date= new java.util.Date();
+//      String path = dir.getAbsolutePath() + File.separator
+//                + (new Timestamp(date.getTime())).toString().replace(":", "").toString()
+//                .replace(".", ".").toString()
+//                .replace(" ","").toString()
+//                .replace("-","").toString()+".png";
+
+        // 개발서버에 저장하는 법
+//      String rootDirectory = request.getSession().getServletContext().getRealPath("/");
+//      path = Paths.get(rootDirectory + "\\WEB-IN\\resources\\images\\" + product.getProductId() + ".png");
+
+        if (productImage != null && !productImage.isEmpty()) {
+            try {
+                productImage.transferTo(new File(path.toString()));
+            } catch (Exception e) {
+                e.printStackTrace();
+                throw new RuntimeException("Product image saving failed", e);
+            }
+        }
+
+        return "redirect:/admin/productInventory";
+    }
+```
