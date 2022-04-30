@@ -89,3 +89,24 @@ C:\codes\GitRepository\Spring_BuidlingAnECommerceStoreUsingJavaSpringFramework\S
 ```
 C:\codes\GitRepository\Spring_BuidlingAnECommerceStoreUsingJavaSpringFramework\Section02\MusicStore\src\main\webapp
 ```
+
+---------------------------------------
+### Spring Security DB Schema
+ - db: mariadb 10.4.10
+```
+/*
+create table users(
+	username varchar(50) not null primary key,
+	password varchar(50) not null,
+	enabled boolean not null
+);
+
+create table authorities (
+	username varchar(50) not null,
+	authority varchar(50) not null,
+	constraint fk_authorities_users foreign key(username) references users(username)
+);
+create unique index iauthoritiesx_auth_username on authorities (username,authority);
+*/
+
+```
