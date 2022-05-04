@@ -31,7 +31,7 @@
                 </div>
 
                 <input type="submit" value="Submit" class="btn btn-default">
-                <input type="hidden" name="${_csrf.parameteName}" value="${_csrf.token}">
+                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
             </form>
         </div>
     </div>

@@ -40,15 +40,17 @@
         <property name="maxUploadSize" value="1024000" />
     </bean>
 
-    <security:http auto-config="true">
+    <security:http auto-config="true" use-expressions="false">
         <security:intercept-url pattern="/admin/**" access="ROLE_USER" />
         <security:form-login
             login-page="/login"
+            login-processing-url="/j_spring_security_check"
             default-target-url="/admin/"
             authentication-failure-url="/login?error"
             username-parameter="username"
             password-parameter="password" />
         <security:logout
+                logout-url="/j_spring_security_logout"
             logout-success-url="/login?logout" />
     </security:http>
 

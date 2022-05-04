@@ -20,6 +20,7 @@
     <link href="<c:url value='/resources/css/bootstrap.min.css' />" rel="stylesheet">
     <link href="<c:url value='/resources/css/carousel.css' />" rel="stylesheet">
     <link href="<c:url value='/resources/css/main.css' />" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </head>
 <!-- NAVBAR
 ================================================== -->
