@@ -112,6 +112,11 @@ create unique index iauthoritiesx_auth_username on authorities (username,authori
 ```
 
 
-### WorkFlow
+### Business WorkFlow
 
 ![image](https://user-images.githubusercontent.com/22423285/166911631-95b99b4f-e8d5-46a9-a0c2-49066bd46882.png)
+
+### ERD
+
+![image](https://user-images.githubusercontent.com/22423285/167006079-4e09fb5e-a102-4924-a406-52a24bf2d302.png)
+
