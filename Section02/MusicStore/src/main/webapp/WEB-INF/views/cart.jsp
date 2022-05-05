@@ -38,12 +38,12 @@
                         <td>{{item.product.productName}}</td>
                         <td>{{item.product.productPrice}}</td>
                         <td>{{item.quantity}}</td>
-                        <th>{{item.totalPrice}}</th>
-                        <th>
-                            <a href="#" class="label label-danger" ng-click="removeFromCart('{{item.product.productId}}')">
+                        <td>{{item.totalPrice}}</td>
+                        <td>
+                            <a href="" class="btn btn-danger btn-sm" ng-click="removeFromCart('{{item.product.productId}}')">
                                 <span class="glyphicon glyphicon-remove"></span>Remove
                             </a>
-                        </th>
+                        </td>
                     </tr>
                     <tr>
                         <th></th>

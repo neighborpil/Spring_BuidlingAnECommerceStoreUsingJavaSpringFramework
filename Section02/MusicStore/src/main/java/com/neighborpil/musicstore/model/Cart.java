@@ -1,53 +1,31 @@
 package com.neighborpil.musicstore.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Data
-public class Cart {
+@Entity
+public class Cart implements Serializable {
 
-    private String cartId;
-    private Map<String, CartItem> cartItems;
+    private static final long serialVersionUID = -3750121232474406526L;
+
+    @Id
+    @GeneratedValue
+    private int cartId;
+
+    @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<CartItem> cartItems;
+
+    @OneToOne
+    @JoinColumn(name = "customerId")
+    @JsonIgnore
+    private Customer customer;
+
     private double grandTotal;
-
-    public Cart() {
-        cartItems = new HashMap<>();
-        grandTotal = 0;
-    }
-
-    public Cart(String cartId) {
-        this();
-        this.cartId = cartId;
-    }
-
-    public void addCartItem(CartItem item) {
-        String productId = item.getProduct().getProductId();
-
-        if (cartItems.containsKey(productId)) {
-            CartItem existingCartItem = cartItems.get(productId);
-            existingCartItem.setQuantity(existingCartItem.getQuantity() + item.getQuantity());
-            cartItems.put(productId, existingCartItem);
-        } else {
-            cartItems.put(productId, item);
-        }
-
-
-        updateGrandTotal();
-    }
-
-    private void updateGrandTotal() {
-
-        grandTotal = 0;
-        for (CartItem item : cartItems.values()) {
-            grandTotal = grandTotal + (item.getTotalPrice() * item.getQuantity());
-        }
-    }
-
-    public void removeCartItem(CartItem item) {
-        String productId = item.getProduct().getProductId();
-        cartItems.remove(productId);
-        updateGrandTotal();
-    }
 }
