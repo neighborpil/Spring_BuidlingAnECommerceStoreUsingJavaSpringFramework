@@ -110,3 +110,8 @@ create unique index iauthoritiesx_auth_username on authorities (username,authori
 */
 
 ```
+
+
+### WorkFlow
+
+![image](https://user-images.githubusercontent.com/22423285/166911631-95b99b4f-e8d5-46a9-a0c2-49066bd46882.png)
