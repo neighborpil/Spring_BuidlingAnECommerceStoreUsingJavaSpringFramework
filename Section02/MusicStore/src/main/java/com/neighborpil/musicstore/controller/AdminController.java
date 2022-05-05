@@ -99,7 +99,7 @@ public class AdminController {
     }
 
     @RequestMapping("/admin/productInventory/deleteProduct/{productId}")
-    public String deleteProduct(@PathVariable int productId, HttpServletRequest request, Model model) throws Exception{
+    public String deleteProduct(@PathVariable String productId, HttpServletRequest request, Model model) throws Exception{
 
         String rootDirectory = request.getSession().getServletContext().getRealPath("/");
         path = Paths.get(rootDirectory + "\\WEB-INF\\resources\\images\\" + productId + ".png");
@@ -118,7 +118,7 @@ public class AdminController {
     }
 
     @RequestMapping("/admin/productInventory/editProduct/{id}")
-    public String editProduct(@PathVariable("id") int id, Model model) {
+    public String editProduct(@PathVariable("id") String id, Model model) {
         Product product = productDao.getProductById(id);
 
         model.addAttribute(product);

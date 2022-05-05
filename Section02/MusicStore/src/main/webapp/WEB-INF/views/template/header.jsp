@@ -12,15 +12,23 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="_csrf" content="${_csrf.token}"/>
+    <meta name="_csrf_header" content="${_csrf.headerName}"/>
     <%--<link rel="icon" href="../../favicon.ico">--%>
 
     <title>Spring & Jun's Music Store</title>
 
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="<c:url value='/resources/css/bootstrap.min.css' />" rel="stylesheet">
     <link href="<c:url value='/resources/css/carousel.css' />" rel="stylesheet">
     <link href="<c:url value='/resources/css/main.css' />" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        var token = $("meta[name='_csrf']").attr("content");
+        var header = $("meta[name='_csrf_header']").attr("content");
+    </script>
 </head>
 <!-- NAVBAR
 ================================================== -->

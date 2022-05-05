@@ -8,8 +8,8 @@ import java.util.Map;
 @Data
 public class Cart {
 
-    private int cartId;
-    private Map<Integer, CartItem> cartItems;
+    private String cartId;
+    private Map<String, CartItem> cartItems;
     private double grandTotal;
 
     public Cart() {
@@ -17,13 +17,13 @@ public class Cart {
         grandTotal = 0;
     }
 
-    public Cart(int cartId) {
+    public Cart(String cartId) {
         this();
         this.cartId = cartId;
     }
 
     public void addCartItem(CartItem item) {
-        int productId = item.getProduct().getProductId();
+        String productId = item.getProduct().getProductId();
 
         if (cartItems.containsKey(productId)) {
             CartItem existingCartItem = cartItems.get(productId);
@@ -41,12 +41,12 @@ public class Cart {
 
         grandTotal = 0;
         for (CartItem item : cartItems.values()) {
-            grandTotal = grandTotal + item.getTotalPrice();
+            grandTotal = grandTotal + (item.getTotalPrice() * item.getQuantity());
         }
     }
 
     public void removeCartItem(CartItem item) {
-        int productId = item.getProduct().getProductId();
+        String productId = item.getProduct().getProductId();
         cartItems.remove(productId);
         updateGrandTotal();
     }

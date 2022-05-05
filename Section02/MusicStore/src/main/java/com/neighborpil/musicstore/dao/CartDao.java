@@ -7,9 +7,9 @@ public interface CartDao {
 
     Cart create(Cart cart);
 
-    Cart read(int cartId);
+    Cart read(String cartId);
 
-    void update(int cartId, Cart cart);
+    void update(String cartId, Cart cart);
 
-    void delete(int cartId);
+    void delete(String cartId);
 }

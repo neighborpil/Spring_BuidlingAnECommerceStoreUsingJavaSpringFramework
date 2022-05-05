@@ -13,7 +13,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int productId;
+    private String productId;
     @NotEmpty(message = "The product name must not be null.")
     private String productName;
     private String productCategory;
