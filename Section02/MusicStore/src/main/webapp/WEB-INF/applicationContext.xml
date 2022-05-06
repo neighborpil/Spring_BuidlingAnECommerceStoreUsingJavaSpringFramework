@@ -41,11 +41,12 @@
     </bean>
 
     <security:http auto-config="true" use-expressions="false">
-        <security:intercept-url pattern="/admin/**" access="ROLE_USER" />
+        <security:intercept-url pattern="/admin/**" access="ROLE_ADMIN" />
+        <security:intercept-url pattern="/customer/**" access="ROLE_USER" />
         <security:form-login
             login-page="/login"
             login-processing-url="/j_spring_security_check"
-            default-target-url="/admin/"
+            default-target-url="/product/productList/"
             authentication-failure-url="/login?error"
             username-parameter="username"
             password-parameter="password" />

@@ -1,10 +1,10 @@
-package com.neighborpil.musicstore.dao;
+package com.neighborpil.musicstore.service;
 
 import com.neighborpil.musicstore.model.Product;
 
 import java.util.List;
 
-public interface ProductDao {
+public interface ProductService {
 
     List<Product> getProductList();
 

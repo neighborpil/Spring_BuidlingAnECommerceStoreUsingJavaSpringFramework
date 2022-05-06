@@ -10,28 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c8c5701-70e3-472e-859d-9109a15027b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/Authorities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/BillingAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/CustomerOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/ShoppingAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/admin/AdminHomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/impl/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartItemController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/CartDaoImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/ProductDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/ProductDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/js/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/template/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/template/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -461,7 +457,7 @@
       <workItem from="1651062064887" duration="7848000" />
       <workItem from="1651280886593" duration="9307000" />
       <workItem from="1651362478230" duration="2398000" />
-      <workItem from="1651461618711" duration="34396000" />
+      <workItem from="1651461618711" duration="38565000" />
     </task>
     <servers />
   </component>
@@ -521,17 +517,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartController.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
