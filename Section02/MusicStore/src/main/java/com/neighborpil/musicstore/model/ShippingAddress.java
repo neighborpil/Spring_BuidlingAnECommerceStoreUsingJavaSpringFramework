@@ -10,13 +10,13 @@ import java.io.Serializable;
 
 @Data
 @Entity
-public class ShoppingAddress implements Serializable {
+public class ShippingAddress implements Serializable {
 
     private static final long serialVersionUID = -5237025673596828088L;
 
     @Id
     @GeneratedValue
-    private int shoppingAddressId;
+    private int shippingAddressId;
     private String streetName;
     private String apartmentNumber;
     private String city;
@@ -29,7 +29,7 @@ public class ShoppingAddress implements Serializable {
 
     @Override
     public String toString() {
-        return "ShoppingAddress{" +
+        return "ShippingAddress{" +
                 "streetName='" + streetName + '\'' +
                 ", apartmentNumber='" + apartmentNumber + '\'' +
                 ", city='" + city + '\'' +

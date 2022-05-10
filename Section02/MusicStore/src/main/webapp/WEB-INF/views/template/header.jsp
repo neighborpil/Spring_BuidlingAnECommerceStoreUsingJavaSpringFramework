@@ -54,7 +54,20 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
-                        <li><a href="<c:url value='/admin' /> ">Admin</a></li>
+                        <c:if test="${pageContext.request.userPrincipal.name ne null}">
+                            <li><a>Welcome: <c:out value="${pageContext.request.userPrincipal.name}"/></a></li>
+                            <li><a id="logoutButton" href="#">Logout</a> </li>
+                            <c:if test="${pageContext.request.userPrincipal.name ne 'admin'}">
+                                <li><a href="<c:url value='/customer/cart' /> ">Cart</a></li>
+                            </c:if>
+                            <c:if test="${pageContext.request.userPrincipal.name eq 'admin'}">
+                                <li><a href="<c:url value='/admin' /> ">Admin</a></li>
+                            </c:if>
+                        </c:if>
+                        <c:if test="${pageContext.request.userPrincipal.name eq null}">
+                            <li><a href="<c:url value='/login' /> ">Login</a></li>
+                            <li><a href="<c:url value='/register' /> ">Register</a></li>
+                        </c:if>
                     </ul>
                 </div>
             </div>
@@ -62,3 +75,19 @@
 
     </div>
 </div>
+
+
+<div id="logout-section" class="d-none">
+    <form id="logoutForm" action="${pageContext.request.contextPath}/j_spring_security_logout?${_csrf.parameterName}=${_csrf.token}" method="POST">
+    </form>
+</div>
+<script>
+    $("#logoutButton").on("click", function(e) {
+        e.preventDefault();
+
+        $("#logoutForm").submit();
+
+        return false;
+    })
+
+</script>

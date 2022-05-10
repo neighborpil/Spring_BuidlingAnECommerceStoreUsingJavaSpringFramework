@@ -16,7 +16,7 @@
 
         <c:if test="${pageContext.request.userPrincipal.name != null}">
             <h2>
-                Welcom: ${pageContext.request.userPrincipal.name} | <button id="logoutButton" type="button" class="btn btn-default">Logout</button>
+                Welcome: ${pageContext.request.userPrincipal.name} | <button id="logoutPageButton" type="button" class="btn btn-default">Logout</button>
             </h2>
         </c:if>
 
@@ -26,14 +26,9 @@
 
         <p>Here you can view, check and modify the product inventory!</p>
 
-        <div id="logout-section" class="d-none">
-            <form:form id="logoutForm" action="${pageContext.request.contextPath}/j_spring_security_logout" method="POST">
-            </form:form>
-        </div>
-
 <script>
 $(function() {
-    $("#logoutButton").on("click", function() {
+    $("#logoutPageButton").on("click", function() {
         $("#logoutForm").submit();
     });
 });

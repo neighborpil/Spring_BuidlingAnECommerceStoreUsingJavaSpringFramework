@@ -4,6 +4,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="fn"     uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="fmt"	   uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
 <%@include file="/WEB-INF/views/template/header.jsp"%>
 <div></div>
 <div class="container-wrapper">
@@ -33,11 +34,15 @@
                     </p>
                     <h4>${product.productPrice} USD</h4>
                     <br>
-                    <c:set var="role" scope="page" value="${param.role}" />
-                    <c:set var="url" scope="page" value="/productList" />
-                    <c:if test="${role eq 'admin'}">
+                    <c:set var="url" scope="page" value="/product/productList" />
+                    <c:if test="${isAdmin eq true}">
                         <c:set var="url" scope="page" value="/admin/productInventory" />
                     </c:if>
+<%--                    <security:authentication property="principal.authorities" var="authorities"/>--%>
+<%--                    <c:forEach items="${authorities}" var="authority" varStatus="status">--%>
+<%--                        <c:if test="${authority eq 'ROLE_ADMIN'}">--%>
+<%--                        </c:if>--%>
+<%--                    </c:forEach>--%>
 
                     <p ng-controller="cartCtrl">
                         <a href="<c:url value='${url}' />" class="btn btn-default">Back</a>

@@ -1,9 +1,8 @@
-package com.neighborpil.musicstore.dao;
-
+package com.neighborpil.musicstore.service;
 
 import com.neighborpil.musicstore.model.Cart;
 
-public interface CartDao {
+public interface CartService {
 
     Cart getCartById(int cartId);
 

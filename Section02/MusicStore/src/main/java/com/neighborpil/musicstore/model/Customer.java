@@ -39,8 +39,8 @@ public class Customer implements Serializable {
     private BillingAddress billingAddress;
 
     @OneToOne
-    @JoinColumn(name = "shoppingAddressId")
-    private ShoppingAddress shoppingAddress;
+    @JoinColumn(name = "shippingAddressId")
+    private ShippingAddress shippingAddress;
 
     @OneToOne
     @JoinColumn(name = "cartId")

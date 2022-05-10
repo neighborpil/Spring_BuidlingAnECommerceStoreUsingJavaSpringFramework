@@ -1,5 +1,6 @@
-package com.neighborpil.musicstore.dao;
+package com.neighborpil.musicstore.dao.impl;
 
+import com.neighborpil.musicstore.dao.ProductDao;
 import com.neighborpil.musicstore.model.Product;
 import org.hibernate.Query;
 import org.hibernate.Session;
