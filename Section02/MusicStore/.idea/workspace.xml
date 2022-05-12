@@ -10,47 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c8c5701-70e3-472e-859d-9109a15027b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartResourcesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/admin/AdminProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/impl/CartDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/impl/CustomerDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/CartItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/impl/CartItemDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/impl/CartItemDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/impl/CartItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registerCustomer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registerCustomerSuccess.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CustomerOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/CustomerOrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/impl/CustomerOrderDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/CustomerOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/impl/CustomerOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/CheckoutCancelled.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/CollectCustomerInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/CollectShippingDetail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/InvalidCartWarning.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/OrderConfirmation.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/ThankCustomer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/flows/checkout/checkout-flow.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MusicStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MusicStore.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/MusicStore_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/MusicStore_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartResourcesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartResourcesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/CartDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/CartDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/impl/ProductDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/impl/CartDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/impl/CartDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/CartItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/CustomerOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/CustomerOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/ShoppingAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/model/ShippingAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/impl/CartItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/CartItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/impl/CartItemDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/impl/CartItemDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/impl/CartItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/service/impl/CartItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/js/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/addProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editProduct.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productInventory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productInventory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/productList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/template/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/template/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/cart.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +49,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="webflow.2_0" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -140,6 +129,9 @@
       </expand>
       <select />
     </treeState>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2094" />
@@ -273,15 +265,16 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32583454" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.neighborpil.musicstore.service.impl" />
+      <recent name="com.neighborpil.musicstore.dao" />
       <recent name="com.neighborpil.musicstore.service" />
+      <recent name="com.neighborpil.musicstore.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\codes\GitRepository\Spring_BuidlingAnECommerceStoreUsingJavaSpringFramework\Section02\MusicStore\src\main\webapp\WEB-INF\resources\images" />
@@ -381,9 +374,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="MusicStore:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.401" ALTERNATIVE_JRE_ENABLED="false">
@@ -484,7 +475,9 @@
       <workItem from="1651280886593" duration="9307000" />
       <workItem from="1651362478230" duration="2398000" />
       <workItem from="1651461618711" duration="59582000" />
-      <workItem from="1652139704332" duration="1929000" />
+      <workItem from="1652139704332" duration="25194000" />
+      <workItem from="1652387415556" duration="716000" />
+      <workItem from="1652388275739" duration="1131000" />
     </task>
     <servers />
   </component>
@@ -544,6 +537,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/controller/CartResourcesController.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/neighborpil/musicstore/dao/impl/CartItemDaoImpl.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

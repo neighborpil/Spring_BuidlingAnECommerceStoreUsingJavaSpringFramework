@@ -19,7 +19,7 @@ public class Customer implements Serializable {
 
 
     @NotEmpty(message = "The customer name must not be null.")
-    private String customerName;
+    private String billingame;
 
     @NotEmpty(message = "The customer email must not be null.")
     private String customerEmail;

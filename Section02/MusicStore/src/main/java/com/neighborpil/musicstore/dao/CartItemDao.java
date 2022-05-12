@@ -1,4 +1,4 @@
-package com.neighborpil.musicstore.service.impl;
+package com.neighborpil.musicstore.dao;
 
 import com.neighborpil.musicstore.model.Cart;
 import com.neighborpil.musicstore.model.CartItem;

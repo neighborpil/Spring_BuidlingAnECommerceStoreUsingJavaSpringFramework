@@ -1,5 +1,6 @@
-package com.neighborpil.musicstore.service.impl;
+package com.neighborpil.musicstore.dao.impl;
 
+import com.neighborpil.musicstore.dao.CartItemDao;
 import com.neighborpil.musicstore.model.Cart;
 import com.neighborpil.musicstore.model.CartItem;
 import org.hibernate.Query;

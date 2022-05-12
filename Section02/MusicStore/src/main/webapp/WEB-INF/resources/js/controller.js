@@ -29,18 +29,19 @@ cartApp.controller("cartCtrl", function($scope, $http){
     };
 
     $scope.removeFromCart = function (productId) {
-        $http.put("/rest/cart/remove" + productId).success(function (){
+        $http.put("/rest/cart/remove/" + productId).success(function (){
             $scope.refreshCart();
         })
     };
 
-    $scope.callGrandTotal = function () {
+    $scope.calGrandTotal = function () {
         let grandTotal = 0;
 
-        for (let i = 0; i < $scope.cart.cartItem.length; i++) {
-            grandTotal += $scope.cart.cartItem[i].totalPrice
+        if ($scope.cart != null) {
+            for (let i = 0; i < $scope.cart.cartItems.length; i++) {
+                grandTotal += $scope.cart.cartItems[i].totalPrice;
+            }
         }
-
         return grandTotal;
     };
 });

@@ -1,5 +1,6 @@
 package com.neighborpil.musicstore.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -17,6 +18,7 @@ public class CartItem implements Serializable {
 
     @ManyToOne
     @JoinColumn(name = "cartId")
+    @JsonIgnore
     private Cart cart;
 
     @ManyToOne
